@@ -20,3 +20,50 @@ h1,h2 {
     width: 100%;
     height: 400px;
 }
+ /* Make the image responsive */
+ .responsive-img {
+    width: 100%;  /* Makes the image scale with the screen */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 800px; /* Optional: Prevents the image from becoming too large */
+    display: block; /* Removes extra spacing below inline images */
+    margin: auto; /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow */
+}
+/* Inline button */
+.inline-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: background 0.3s;
+}
+
+.inline-button:hover {
+    background-color: #575757;
+}
+
+/* Hide button on screens smaller than 768px */
+@media (max-width: 768px) {
+    .inline-button {
+        display: none;
+    }
+}
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+        /* Tablet Screens (768px and below) */
+        @media (max-width: 768px) {
+            .responsive-img {
+                max-width: 600px; /* Slightly reduce image size */
+            }
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .responsive-img {
+        max-width: 90%; /* Make sure the image doesn't take full width */
+        border-radius: 5px; /* Slightly reduce border radius */
+    }
+    
