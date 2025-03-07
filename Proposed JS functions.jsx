@@ -1,11 +1,11 @@
-//Funtction to simulate user interaction (e.g., clicking on a button)
+    //Funtction to simulate user interaction (e.g., clicking on a button)
 function simulate simulateUserInteraction(){
     //Get the button element
     const button= document.querySelector('button');
     //Simulate a click on the button
     button.click();
 }
-//Function to validate the form
+    //Function to validate the form
 function validateForm(){
     //Get the form elements
     const nameInput= document.getElementById('name');
@@ -35,7 +35,7 @@ function validateForm(){
     return true;
 }
 
-// Function to store feedback 
+    // Function to store feedback 
 function storeFeedback () {
     // Get the feedback input element
     const feedbackInput = document.getElementById ('feedback');
@@ -48,7 +48,7 @@ function storeFeedback () {
     feedbackInput.value = '';
 }
 
-//Function to calculate the number of visitors to the site 
+    //Function to calculate the number of visitors to the site 
 function calculateVisitors () {
     //get the current visitor count from local storage 
     let visitorCount = localStorage.getItem('visitorCount');
@@ -68,7 +68,7 @@ function calculateVisitors () {
     visitorCountElement.textContent = 'Visitorcount: ${visitorCount}';
 }
 
-//Function to display the stored freedback
+     //Function to display the stored freedback
 function displayFeedback () {
     //Get thestored feedback from local storage
     
@@ -80,7 +80,7 @@ function displayFeedback () {
     }
 }
 
-//call the functions on page load 
+    //call the functions on page load 
 document.addEventListener('DOMContent-Loaded',() => {
     calculateVisitors();
     displayFeedback();
